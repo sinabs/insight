@@ -28,7 +28,7 @@ angular.module('insight.currency').controller('CurrencyController',
           response = _roundFloat((value * this.factor), 2);
         } else { // assumes symbol is Bifi
           this.factor = 1000;
-          response = _roundFloat((value * this.factor), 8);
+          response = _roundFloat((value * this.factor), 5);
         }
         // prevent sci notation
         if (response < 1e-7) response=response.toFixed(8);
