@@ -21,13 +21,13 @@ angular.module('insight.currency').controller('CurrencyController',
         if (this.symbol === 'USD') {
           response = _roundFloat((value * this.factor), 2);
         } else if (this.symbol === 'mBifi') {
-          this.factor = 1000;
+          this.factor = 1000000;
           response = _roundFloat((value * this.factor), 5);
         } else if (this.symbol === 'bits') {
           this.factor = 1000000;
           response = _roundFloat((value * this.factor), 2);
         } else { // assumes symbol is Bifi
-          this.factor = 1;
+          this.factor = 1000;
           response = _roundFloat((value * this.factor), 8);
         }
         // prevent sci notation
@@ -48,11 +48,11 @@ angular.module('insight.currency').controller('CurrencyController',
           $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
         });
       } else if (currency === 'mBifi') {
-        $rootScope.currency.factor = 1000;
+        $rootScope.currency.factor = 1000000;
       } else if (currency === 'bits') {
         $rootScope.currency.factor = 1000000;
       } else { //Bifi
-        $rootScope.currency.factor = 1;
+        $rootScope.currency.factor = 1000;
       }
     };
 

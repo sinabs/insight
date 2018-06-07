@@ -5,7 +5,7 @@ angular.module('insight.system').controller('HeaderController',
     $scope.global = Global;
 
     $rootScope.currency = {
-      factor: 1,
+      factor: 1000,
       bitstamp: 0,
       symbol: 'Bifi'
     };
