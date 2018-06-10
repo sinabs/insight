@@ -59,11 +59,11 @@ angular.module('insight')
     gettextCatalog.currentLanguage = defaultLanguage;
     amMoment.changeLocale(defaultLanguage);
     $rootScope.$on('$routeChangeStart', function() {
-      ngProgress.start();
+      // ngProgress.start();
     });
 
     $rootScope.$on('$routeChangeSuccess', function() {
-      ngProgress.complete();
+      // ngProgress.complete();
 
       //Change page title, based on Route information
       $rootScope.titleDetail = '';

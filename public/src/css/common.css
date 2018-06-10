@@ -5,14 +5,14 @@
 
 html,
 body {
-  color: #2d2d2d;
+  color: #3e3d3d;
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #2d2d2d;
+  color: #575757;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -107,21 +107,24 @@ margin-left: 0;
 }
 .navbar { min-height: 64px; }
 .navbar-default .navbar-toggle { 
+  background-color: #2d2d2d;
   border-color: #fff;
   margin-top: 15px;
 }
 
 .navbar-default .navbar-toggle .icon-bar { background-color: #fff; }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #2d2d2d;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #2d2d2d
+}
 
 .navbar-default {
-  background-color: #8DC429;
+  background-color: #fff;
   margin: 0;
   border: 0;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #F4FBE8;
+  color: #575757;
   font-family: 'Ubuntu', sans-serif;
   padding-left: 20px;
   padding-right: 20px;
@@ -133,7 +136,8 @@ margin-left: 0;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #fff;
+  color: #e4d300;
+  border-bottom: 2px solid #e4d300;
 }
 
 .navbar-form .form-group {
@@ -167,18 +171,17 @@ margin-left: 0;
   height: 47px;
   background-image: url('../img/logo.png');
   margin-top: 8px;
+  margin-left: 0 !important;
   background-size: 100% 100%;
 }
 
 .navbar-form .form-control {
-  background-color: #7CAD23;
+  background-color: #fff;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border: 0;
-  -webkit-box-shadow: 1px 1px 0px 0px rgba(255,255,255,0.41), inset 1px 1px 3px 0px rgba(0,0,0,0.10);
-  -moz-box-shadow:    1px 1px 0px 0px rgba(255,255,255,0.41), inset 1px 1px 3px 0px rgba(0,0,0,0.10);
-  box-shadow:         1px 1px 0px 0px rgba(255,255,255,0.41), inset 1px 1px 3px 0px rgba(0,0,0,0.10);
+  border: 1px solid #b0b0b0;
+  box-shadow: none;
 }
 
 .navbar-nav>li>a {
@@ -203,17 +206,17 @@ margin-left: 0;
   margin-left: 5px;
 }
 
-#search { color: #fff; }
+#search { color: #000; }
 
 #search::-webkit-input-placeholder {
-  color: #BCDF7E;
+  color: #ccc;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 100;
 }
 
 #search::-moz-placeholder {
-  color: #BCDF7E;
+  color: #ccc;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
 }
@@ -221,12 +224,12 @@ margin-left: 0;
 .status {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #597338;
+  background-color: rgba(228, 211, 0, 0.27);
   border-radius: 3px;
   margin: 15px 0;
   padding: 8px 10px;
   font-size: 12px;
-  color: #eee;
+  color: #575757;
   text-align: center;
   margin-right: 10px;
 }
@@ -447,9 +450,14 @@ margin-left: 0;
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-#wrap > .container { padding: 70px 15px 0; }
+.container{
+  padding: 0;
+}
+
+#wrap > .container { padding: 100px 0 0; }
 
 #footer > .container { padding: auto 15px; }
+
 
 .code { font-size: 80%; }
 
@@ -589,13 +597,15 @@ margin-left: 0;
 
 /* Index */
 #home .btn-more {
-  border-top: 1px solid #ddd;
   margin: 30px auto 0;
-  text-align: center;
-  width: 90%;
+  text-align: left;
+  width: 100%;
 }
 #home .btn-more .btn-default {
   margin-top: -23px;
+  background-color: #e4d300;
+  color: #000000;
+  border-style: none;
 }
 
 #powered .powered-text {
@@ -719,6 +729,30 @@ a.v_highlight_more {
   margin-top: 15px;
 }
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+  background-color: transparent;
+}
+
+.no-border{
+  border-style: none !important;
+}
+
+.table>thead>tr>th{
+  background-color: #f9f9f9;
+  border-bottom-style: none;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+  border-top-style: none;
+}
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th{
+  background-color: rgba(228, 211, 0, 0.2);
+}
+
+.index-placeholder{
+  width: 100%;
+  height: 40px;
+}
+
 @media (max-width: 991px) {
   .status {
     display: none;
@@ -793,7 +827,7 @@ a.v_highlight_more {
     width: 146px;
     height: 34px;
     margin-top: 7px;
-    margin-left: 15px;
+    margin-left: 15px !important;
   }
   .insight {
     font-size: 26px;

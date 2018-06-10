@@ -36,6 +36,8 @@
         <div class="btn-more">
           <a href="blocks" class="btn btn-default" translate>See all blocks</a>
         </div>
+        
+        <div class="index-placeholder"></div>
 
         <h2 translate>Latest Transactions</h2>
 
@@ -47,7 +49,7 @@
             </tr>
           </thead>
           <tbody>
-          <tr data-ng-show="!txs.length"><td colspan="3" translate>Waiting for transactions...</td></tr>
+          <tr data-ng-show="!txs.length"><td colspan="2" translate>Waiting for transactions...</td></tr>
           <tr class="fader" data-ng-repeat='tx in txs'>
             <td>
               <a class="ellipsis" href="tx/{{tx.txid}}">{{tx.txid}}</a>
