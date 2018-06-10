@@ -7,7 +7,7 @@ angular.module('insight.system').controller('HeaderController',
     $rootScope.currency = {
       factor: 1000,
       bitstamp: 0,
-      symbol: 'Bifi'
+      symbol: 'BIFI'
     };
 
     $scope.menu = [{
