@@ -163,6 +163,9 @@ margin-left: 0;
 .navbar-default .navbar-brand {
   color: #FFFFFF;
   padding: 20px 15px;
+  width: 203px;
+  height: 47px;
+  background-image: url('../img/logo.png');
 }
 
 .navbar-form .form-control {
