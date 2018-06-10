@@ -5,14 +5,14 @@
 
 html,
 body {
-  color: #373D42;
+  color: #2d2d2d;
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #373D42;
+  color: #2d2d2d;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #ngProgress {
   background-color: #6C9032 !important;
   box-shadow: none !important;
-  color: #373D42 !important;
+  color: #2d2d2d !important;
   height: 3px !important;
   margin: 0;
   opacity: 0;
@@ -112,7 +112,7 @@ margin-left: 0;
 }
 
 .navbar-default .navbar-toggle .icon-bar { background-color: #fff; }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #373D42;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #2d2d2d;}
 
 .navbar-default {
   background-color: #8DC429;
@@ -162,10 +162,11 @@ margin-left: 0;
 
 .navbar-default .navbar-brand {
   color: #FFFFFF;
-  padding: 20px 15px;
+  padding: 0;
   width: 203px;
   height: 47px;
   background-image: url('../img/logo.png');
+  margin-top: 8px;
 }
 
 .navbar-form .form-control {
@@ -393,7 +394,7 @@ margin-left: 0;
 
 /* Set the fixed height of the footer here */
 #footer {
-  background-color: #373D42;
+  background-color: #2d2d2d;
   color: #fff;
   height: 51px;
   overflow: hidden;
