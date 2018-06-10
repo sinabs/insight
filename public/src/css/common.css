@@ -167,6 +167,7 @@ margin-left: 0;
   height: 47px;
   background-image: url('../img/logo.png');
   margin-top: 8px;
+  background-size: 100% 100%;
 }
 
 .navbar-form .form-control {
@@ -789,7 +790,10 @@ a.v_highlight_more {
     font-size: 20px;
   }
   .navbar-default .navbar-brand {
-    padding: 15px;
+    width: 146px;
+    height: 34px;
+    margin-top: 7px;
+    margin-left: 15px;
   }
   .insight {
     font-size: 26px;
