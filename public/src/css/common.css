@@ -118,26 +118,39 @@ margin-left: 0;
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #2f2f2f;
   margin: 0;
   border: 0;
+  box-shadow: 1px 1px 1px rgba(170, 170, 170, 0.19);
+  -webkit-box-shadow: 1px 1px 1px rgba(170, 170, 170, 0.19);
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #575757;
+  color: #fff;
   font-family: 'Ubuntu', sans-serif;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-  background-color: #6C9032;
-  color: #fff;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>li>a:focus{
+  color: #e4d300;
+  position: relative;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
   color: #e4d300;
-  border-bottom: 2px solid #e4d300;
+  position: relative;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>li>a:hover::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e4d300;
 }
 
 .navbar-form .form-group {
@@ -167,9 +180,9 @@ margin-left: 0;
 .navbar-default .navbar-brand {
   color: #FFFFFF;
   padding: 0;
-  width: 203px;
+  width: 175px;
   height: 47px;
-  background-image: url('../img/logo.png');
+  background-image: url('../img/logo@2x.png');
   margin-top: 8px;
   margin-left: 0 !important;
   background-size: 100% 100%;
@@ -206,7 +219,7 @@ margin-left: 0;
   margin-left: 5px;
 }
 
-#search { color: #000; }
+#search { color: #000; border-style: none; }
 
 #search::-webkit-input-placeholder {
   color: #ccc;
@@ -224,12 +237,12 @@ margin-left: 0;
 .status {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: rgba(228, 211, 0, 0.27);
+  background-color: rgba(202, 202, 202, 0.32);
   border-radius: 3px;
   margin: 15px 0;
   padding: 8px 10px;
   font-size: 12px;
-  color: #575757;
+  color: #fff;
   text-align: center;
   margin-right: 10px;
 }
@@ -324,8 +337,9 @@ margin-left: 0;
   border-radius: 2px;
 }
 .btn-primary {
-  background-color: #8DC429;
-  border: 2px solid #76AF0F;
+  background-color: #e4d300;
+  color: #000;
+  border-style: none;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
@@ -335,8 +349,8 @@ margin-left: 0;
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active,
 .btn-danger.active, .open .dropdown-toggle.btn-danger {
   background-color: #fff;
-  border: 2px solid #ccc;
   color: #373D42;
+  border-style: none;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
@@ -371,7 +385,8 @@ margin-left: 0;
 }
 
 .txvalues-primary {
-  background-color: #8DC429;
+  background-color: rgba(228,211,0, 0.27);
+  color: #575757;
 }
 
 .txvalues-default {
@@ -380,7 +395,8 @@ margin-left: 0;
 }
 
 .txvalues-success {
-  background-color: #2FA4D7;
+  background-color: #cecece;
+  color: #575757;
 }
 
 .txvalues-danger {
@@ -394,7 +410,10 @@ margin-left: 0;
   font-size: 14px;
   font-weight: normal;
 }
-.progress-bar-info { background-color: #8DC429; }
+.progress-bar-info { 
+  background-color: rgba(228,211,0, 0.27); 
+  color: #575757;
+}
 
 /* Set the fixed height of the footer here */
 #footer {
@@ -731,6 +750,7 @@ a.v_highlight_more {
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
   background-color: transparent;
+  color: #fff;
 }
 
 .no-border{
@@ -769,7 +789,7 @@ a.v_highlight_more {
     margin-top: 0;
     padding: 0;
   }
-  .m50v {
+  .m50v, .m30v{
     margin: 15px 0;
   }
   .block-id span {
@@ -824,7 +844,7 @@ a.v_highlight_more {
     font-size: 20px;
   }
   .navbar-default .navbar-brand {
-    width: 146px;
+    width: 126px;
     height: 34px;
     margin-top: 7px;
     margin-left: 15px !important;
@@ -853,6 +873,9 @@ a.v_highlight_more {
     padding: 0.5em 2em;
     font-size: 11px;
   }
+  .navbar-default .navbar-nav>li>a:hover::before{
+    display: none;
+  }
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #fff;
   }
@@ -864,11 +887,11 @@ a.v_highlight_more {
   }
   .txvalues-success {
     background: none;
-    color: #2FA4D7;
+    color: #cecece;
   }
   .txvalues-primary {
     background: none;
-    color: #8DC429;
+    color: rgba(228,211,0, 0.27);
   }
   .txvalues-default {
     background: none;
