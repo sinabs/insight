@@ -1,6 +1,6 @@
 # Insight UI
 
-A Bitcoin blockchain explorer web application service for [Bitcore Node](https://github.com/bitpay/bitcore-node) using the [Insight API](https://github.com/bitpay/insight-api).
+A BIFI blockchain explorer web application service for [Bitcore Node](https://github.com/bitpay/bitcore-node) using the [Insight API](https://github.com/bitpay/insight-api).
 
 ## Quick Start
 
@@ -11,15 +11,13 @@ Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io
 To manually install all of the necessary components, you can run these commands:
 
 ```bash
-npm install -g bitcore-node
-bitcore-node create mynode
+npm install -g npm i -g https://github.com/sinabs/bitcore.git#bifi
+bitcore create mynode
 cd mynode
-bitcore-node install insight-api
-bitcore-node install insight-ui
-bitcore-node start
+bitcore start
 ```
 
-Open a web browser to `http://localhost:3001/insight/`
+Open a web browser to `http://localhost:3001/`
 
 ## Development
 
@@ -41,8 +39,8 @@ By default, the `insightConfig` in `package.json` is:
 
 ```json
   "insightConfig": {
-    "apiPrefix": "insight-api",
-    "routePrefix": "insight"
+    "apiPrefix": "api",
+    "routePrefix": ""
   }
 ```
 
@@ -50,8 +48,8 @@ To change these routes, first make your changes to `package.json`, for example:
 
 ```json
   "insightConfig": {
-    "apiPrefix": "api",
-    "routePrefix": ""
+    "apiPrefix": "explorer-api",
+    "routePrefix": "explorer"
   }
 ```
 
