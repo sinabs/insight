@@ -11,7 +11,7 @@ Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io
 To manually install all of the necessary components, you can run these commands:
 
 ```bash
-npm install -g npm i -g https://github.com/sinabs/bitcore.git#bifi
+npm i -g https://github.com/sinabs/bitcore.git#bifi
 bitcore create mynode
 cd mynode
 bitcore start
