@@ -39,7 +39,7 @@ By default, the `insightConfig` in `package.json` is:
 
 ```json
   "insightConfig": {
-    "apiPrefix": "api",
+    "apiPrefix": "insight-api",
     "routePrefix": ""
   }
 ```

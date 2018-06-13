@@ -1,7 +1,7 @@
 {
   "name": "insight-ui",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
-  "version": "0.4.3",
+  "version": "5.0.1",
   "repository": "git://github.com/bitpay/insight-ui.git",
   "bugs": {
     "url": "https://github.com/bitpay/insight-ui/issues"
@@ -18,13 +18,13 @@
   ],
   "bitcoreNode": "bitcore-node",
   "insightConfig": {
-    "apiPrefix": "api",
+    "apiPrefix": "insight-api",
     "routePrefix": ""
   },
   "scripts": {
     "build": "bower install --allow-root && grunt compile",
     "watch": "grunt",
-    "install-and-build": "npm run build",
+    "install-and-build": "",
     "test": "mocha test"
   },
   "dependencies": {},
