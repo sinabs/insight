@@ -24,7 +24,7 @@
   "scripts": {
     "build": "bower install --allow-root && grunt compile",
     "watch": "grunt",
-    "install-and-build": "",
+    "install-and-build": "echo '启动跳过页面编译,网站马上就绪!'",
     "test": "mocha test"
   },
   "dependencies": {},
