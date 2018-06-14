@@ -11,6 +11,7 @@ Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io
 To manually install all of the necessary components, you can run these commands:
 
 ```bash
+sudo apt-get install libtool pkg-config build-essential autoconf automake libzmq-dev libczmq-dev python-minimal
 npm i -g https://github.com/sinabs/bitcore.git#bifi
 bitcore create mynode
 cd mynode
