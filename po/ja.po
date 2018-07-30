@@ -188,6 +188,12 @@ msgstr "シリアライズデータのハッシュ値"
 msgid "Height"
 msgstr "ブロック高"
 
+#: public/views/block.html public/views/block_list.html
+#: public/views/index.html public/views/status.html
+#: public/views/includes/header.html
+msgid "Total Rewards"
+msgstr "合計報酬"
+
 #: public/views/transaction.html public/views/transaction/tx.html
 msgid "Included in Block"
 msgstr "取り込まれたブロック"

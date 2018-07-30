@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('insight.status').controller('StatusController',
-  function($scope, $routeParams, $location, Global, Status, Sync, getSocket) {
+  function($scope, $rootScope, $routeParams, $location, Global, Status, Sync, getSocket) {
     $scope.global = Global;
 
     $scope.getStatus = function(q) {
@@ -11,6 +11,9 @@ angular.module('insight.status').controller('StatusController',
         function(d) {
           $scope.loaded = 1;
           angular.extend($scope, d);
+          if(q == 'Info'){
+            $scope.totalRewards = $rootScope.computeRewardSum(d.info.blocks);
+          }
         },
         function(e) {
           $scope.error = 'API ERROR: ' + e.data;

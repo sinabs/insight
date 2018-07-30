@@ -30,6 +30,7 @@ angular.module('insight.system').controller('HeaderController',
         blockHash: hash
       }, function(res) {
         $scope.totalBlocks = res.height;
+        $scope.totalRewards_RealTime = $rootScope.computeRewardSum($scope.totalBlocks);
       });
     };
 
@@ -42,6 +43,5 @@ angular.module('insight.system').controller('HeaderController',
         _getBlock(blockHash);
       });
     });
-
     $rootScope.isCollapsed = true;
   });
