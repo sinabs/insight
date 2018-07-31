@@ -192,7 +192,7 @@ msgstr "ブロック高"
 #: public/views/index.html public/views/status.html
 #: public/views/includes/header.html
 msgid "Criculating Supply"
-msgstr "合計報酬"
+msgstr "調達供給"
 
 #: public/views/transaction.html public/views/transaction/tx.html
 msgid "Included in Block"
