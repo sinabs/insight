@@ -112,6 +112,7 @@ angular.module('insight')
         reward_perblock = $rootScope.accDiv(reward_perblock, 2);//防止丢精度
       }
       sum -= remain_reward;
+      sum += 17815312500;
       return sum;
     }
   });

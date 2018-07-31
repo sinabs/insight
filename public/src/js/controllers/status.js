@@ -3,6 +3,7 @@
 angular.module('insight.status').controller('StatusController',
   function($scope, $rootScope, $routeParams, $location, Global, Status, Sync, getSocket) {
     $scope.global = Global;
+    $scope.totalRewards = 0;
 
     $scope.getStatus = function(q) {
       Status.get({

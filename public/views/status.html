@@ -93,8 +93,8 @@
             <td class="text-right"><a href="block-index/{{info.blocks}}">{{info.blocks}}</a></td>
           </tr>
           <tr>
-            <td translate>Total Rewards</td>
-            <td class="text-right">{{totalRewards}}</td>
+            <td translate>Criculating Supply</td>
+            <td class="text-right">{{$root.currency.getConvertion(totalRewards/1000) || totalRewards + ' BIFI'}}</td>
           </tr>
           <tr>
             <td translate>Time Offset</td>

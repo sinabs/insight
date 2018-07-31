@@ -191,7 +191,7 @@ msgstr "ブロック高"
 #: public/views/block.html public/views/block_list.html
 #: public/views/index.html public/views/status.html
 #: public/views/includes/header.html
-msgid "Total Rewards"
+msgid "Criculating Supply"
 msgstr "合計報酬"
 
 #: public/views/transaction.html public/views/transaction/tx.html
