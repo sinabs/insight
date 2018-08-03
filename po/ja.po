@@ -272,6 +272,10 @@ msgstr "採掘者"
 msgid "Mining Difficulty"
 msgstr "採掘難易度"
 
+#: public/views/status.html
+msgid "Total hash power"
+msgstr "フルネットワークコンピューティングパワー"
+
 #: public/views/block.html
 msgid "Next Block"
 msgstr "次のブロック"

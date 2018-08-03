@@ -14,6 +14,7 @@ angular.module('insight.status').controller('StatusController',
           angular.extend($scope, d);
           if(q == 'Info'){
             $scope.totalRewards = $rootScope.computeRewardSum(d.info.blocks);
+            $scope.totalHashPower = ((d.info.difficulty) * 65536/(300 * 1000)).toFixed(1);
           }
         },
         function(e) {
