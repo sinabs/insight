@@ -11,6 +11,9 @@ angular.module('insight.system').controller('HeaderController',
     };
 
     $scope.menu = [{
+      'title': 'Home',
+      'link': 'https://www.bitcoinfile.org/'
+    },{
       'title': 'Blocks',
       'link': 'blocks'
     }, {

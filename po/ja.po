@@ -130,6 +130,10 @@ msgstr "検証数"
 msgid "Conn"
 msgstr "接続数"
 
+#: public/views/includes/header.html
+msgid "Home"
+msgstr "トップページ"
+
 #: public/views/status.html
 msgid "Connections to other nodes"
 msgstr "他ノードへの接続"
